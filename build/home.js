@@ -138,7 +138,7 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./app/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("var React = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar Header = __webpack_require__(/*! ../../components/header/header */ \"./app/components/header/header.js\");\n\n__webpack_require__(/*! ./home.scss */ \"./app/views/home/home.scss\");\n\nvar namespace = 'ui-app';\n\nvar Home = function Home(props) {\n  var name = props.name;\n  return /*#__PURE__*/React.createElement(\"div\", {\n    className: 'ui-app'\n  }, \"pagina home con props \", name, /*#__PURE__*/React.createElement(Header, null));\n};\n\nmodule.exports = Home;\n\n//# sourceURL=webpack:///./app/views/home/index.js?");
+eval("var React = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar Header = __webpack_require__(/*! ../../components/header/header */ \"./app/components/header/header.js\");\n\n__webpack_require__(/*! ./home.scss */ \"./app/views/home/home.scss\");\n\nvar namespace = \"ui-app\";\n\nvar Home = function Home(props) {\n  console.log('que trae la props', props);\n  var name = props.name;\n  return /*#__PURE__*/React.createElement(\"div\", {\n    className: \"ui-app\"\n  }, \"pagina home con props \", name, /*#__PURE__*/React.createElement(Header, null));\n};\n\nmodule.exports = Home;\n\n//# sourceURL=webpack:///./app/views/home/index.js?");
 
 /***/ }),
 

@@ -16,7 +16,7 @@ module.exports = function () {
 
     const html = template(
       "home",
-      ReactDOMServer.renderToString(React.createElement(Home, { data })),
+      ReactDOMServer.renderToString(React.createElement(Home, data)),
       data
     );
 

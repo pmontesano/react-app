@@ -8,16 +8,14 @@ const { Children } = require("react");
 
 module.exports = function () {
   router.get("/", (req, res) => {
-    const data = {
+    const initialState = {
       name: "Pablo Montesano",
     };
 
-    console.log("data", data);
-
     const html = template(
       "home",
-      ReactDOMServer.renderToString(React.createElement(Home, data)),
-      data
+      ReactDOMServer.renderToString(React.createElement(Home, initialState)),
+      initialState
     );
 
     res.send(html);

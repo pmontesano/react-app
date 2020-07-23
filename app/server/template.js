@@ -1,4 +1,4 @@
-module.exports = (bundle, component, data) => `
+module.exports = (bundle, component, initialState) => `
   <!DOCTYPE html>
   <html lang="en">
     <head>
@@ -6,7 +6,7 @@ module.exports = (bundle, component, data) => `
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Title</title>
       <link rel="stylesheet" type="text/css" href="/${bundle}.css" />
-      <script>window.__PRELOADED_STATE__ = ${JSON.stringify(data)}</script>
+      <script>window.__PRELOADED_STATE__ = ${JSON.stringify(initialState)}</script>
     </head>
     <body>
       <div id="root-app">${component}</div>
